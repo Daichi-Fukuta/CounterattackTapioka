@@ -1,0 +1,9 @@
+<div class="text-center mt-3">
+  <h1 class="mb-5">ユーザー一覧</h1>
+  <%= link_to '新規登録', new_user_path, class: 'btn btn-outline-primary mt-3 mb-5' %>
+  <br>
+  <% @users.each do |user| %>
+    <%= user.nick_name %><span>さん</span>
+    <p>---------------------</p>
+  <% end %>
+</div>
